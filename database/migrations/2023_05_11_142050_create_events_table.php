@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('speaker_id');
+            $table->foreignId('speaker_id')->constrained();
             $table->string('title');
             $table->string('slug');
             $table->text('description');

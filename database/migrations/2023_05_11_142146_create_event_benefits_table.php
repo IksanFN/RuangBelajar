@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('event_benefits', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('event_id');
+            $table->bigInteger('event_id')->unsigned();
+            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
             $table->string('name');
             $table->timestamps();
         });
