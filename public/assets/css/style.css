@@ -28,3 +28,6 @@ body {
 .nav-link:hover {
     color: #0d6efd !important;
 }
+a {
+    text-decoration: none !important;
+}
