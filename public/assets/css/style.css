@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+.shadow-smooth {
+        box-shadow: 0 2px 50px 0 rgba(0,0,0,.1);
+}
+
+/* Text Color */
+.text-green {
+    color: #31b380;
+}
+.text-indigo {
+    color: #7839f3;
+}
+
+/* Button */
+.btn-rounded {
+    border-radius: 20px !important;
+}
+.bg-indigo {
+    background-color: #7839f3 !important;
+}
+
+/* Active */
+.active{
+    color: #0d6efd !important;
+}
+.nav-link:hover {
+    color: #0d6efd !important;
+}
