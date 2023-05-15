@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Home'])
+@extends('layouts.master', ['title' => 'Home'])
 
 @section('content')
 <section class="container py-3">
@@ -7,7 +7,7 @@
             <p class="fs-6 fw-medium text-green mb-2">LEARN FROM EXPERT</p>
             <h1 class="display-6 fw-semibold mb-3">Start Your <span class="text-primary">Developer Journey</span> Today</h1>
             <p class="fs-6 mb-4">Our bootcamp is helping junior developers who are really passionate in the programming.</p>
-            <a href="{{ route('auth') }}" class="btn btn-primary px-4 py-2 btn-rounded me-2">Get Started</a>
+            <a href="" class="btn btn-primary px-4 py-2 btn-rounded me-2">Get Started</a>
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-5 mt-4">
@@ -27,7 +27,7 @@
       </a>
   
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Dashboard</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
         <li class="nav-item"><a href="events.html" class="nav-link px-2 text-body-secondary">Events</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>

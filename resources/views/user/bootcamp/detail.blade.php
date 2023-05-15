@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Detail Program'])
+@extends('layouts.master', ['title' => 'Detail Program'])
 
 @section('content')
 <section class="container py-3">
