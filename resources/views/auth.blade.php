@@ -25,7 +25,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-10">
                 <div class="card border-0 shadow-smooth p-4">
-                    <h3 class="mb-3 text-center text-primary">LearnLabs</h3>
+                    <h3 class="mb-3 text-center text-primary">SanCamp</h3>
                     <div class="row g-0 align-items-center justify-content-between">
                         <div class="col-md-6 text-center">
                             <img src="{{ asset('assets/images/ill_login_new.png') }}" alt="" class="card-img-left img-fluid" width="400">

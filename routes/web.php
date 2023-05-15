@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 // Route User Guest
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 Route::get('/program', function () {
     return view('user.program.index');
 });
@@ -24,7 +24,8 @@ Route::get('/detail-program', function () {
 });
 Route::get('/sign-in', function () {
     return view('auth');
-});
+})->name('auth');
+
 Route::get('/checkout', function () {
     return view('user.checkout.index');
 });

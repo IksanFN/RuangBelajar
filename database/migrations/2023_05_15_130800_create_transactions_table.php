@@ -11,11 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('event_benefits', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('event_id')->unsigned();
-            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('name');
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('bootcamp_id')->constrained();
+            $table->boolean('is_paid')->default(false);
+            $table->date('payment_date');
+            $table->time('payment_expired');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -25,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('event_benefits');
+        Schema::dropIfExists('transactions');
     }
 };
