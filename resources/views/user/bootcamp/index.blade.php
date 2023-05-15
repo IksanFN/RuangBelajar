@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Program'])
+@extends('layouts.app', ['title' => 'Bootcamp'])
 
 @section('content')
 <section class="container py-3">

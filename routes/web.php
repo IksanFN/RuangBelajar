@@ -16,16 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
-Route::get('/program', function () {
-    return view('user.program.index');
+Route::get('/bootcamp', function () {
+    return view('user.bootcamp.index');
+})->name('bootcamp');
+Route::get('/detail-bootcamp', function () {
+    return view('user.bootcamp.detail');
 });
-Route::get('/detail-program', function () {
-    return view('user.program.detail');
-});
+
 Route::get('/sign-in', function () {
     return view('auth');
 })->name('auth');
 
 Route::get('/checkout', function () {
     return view('user.checkout.index');
+});
+
+Route::get('/success-checkout', function () {
+    return view('user.checkout.success-checkout');
 });
