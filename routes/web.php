@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/program', function () {
     return view('user.program');
 });
+Route::get('/detail-program', function () {
+    return view('user.detail-program');
+});
