@@ -12,7 +12,25 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// Route User Guest
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+Route::get('/bootcamp', function () {
+    return view('user.bootcamp.index');
+})->name('bootcamp');
+Route::get('/detail-bootcamp', function () {
+    return view('user.bootcamp.detail');
+});
+
+Route::get('/sign-in', function () {
+    return view('auth');
+})->name('auth');
+
+Route::get('/checkout', function () {
+    return view('user.checkout.index');
+});
+
+Route::get('/success-checkout', function () {
+    return view('user.checkout.success-checkout');
 });
