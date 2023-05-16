@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-md-6 text-center">
                             <div class="card-body pb-0">
-                                <a href="" class="btn btn-primary px-4 btn-rounded shadow-smooth"><i class="fa-brands fa-google me-2 text-white"></i> Login or Sign Up with Google</a>
+                                <a href="{{ route('user.login_google') }}" class="btn btn-primary px-4 btn-rounded shadow-smooth"><i class="fa-brands fa-google me-2 text-white"></i> Login or Sign Up with Google</a>
                             </div>
                         </div>
                     </div>
