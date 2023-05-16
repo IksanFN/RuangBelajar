@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Home'])
+@extends('layouts.master', ['title' => 'Home'])
 
 @section('content')
 <section class="container py-3">
@@ -27,7 +27,7 @@
       </a>
   
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Dashboard</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
         <li class="nav-item"><a href="events.html" class="nav-link px-2 text-body-secondary">Events</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>

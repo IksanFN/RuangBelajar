@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Checkout'])
+@extends('layouts.master', ['title' => 'Checkout'])
 
 @section('content')
 <section class="container my-5">
