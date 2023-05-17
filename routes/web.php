@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SpeakerController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,16 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+
+    Route::prefix('admin')->group(function() {
+
+        // Route Speaker
+        Route::get('/speaker', [SpeakerController::class, 'index'])->name('admin.speaker_index');
+        Route::get('/speaker/create', [SpeakerController::class, 'create'])->name('admin.speaker_create');
+        Route::post('/speaker/create', [SpeakerController::class, 'store'])->name('admin.speaker_store');
+
+    });
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
