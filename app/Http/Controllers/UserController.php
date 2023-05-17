@@ -28,7 +28,7 @@ class UserController extends Controller
             'avatar' => $callback->getAvatar(),
             'email_verified_at' => date('Y-m-d H:i:s', time()),
         ];
-
+        
         $user = User::firstOrCreate(['email' => $data['email']], $data);
         Auth::login($user, true);
         

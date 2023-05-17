@@ -17,8 +17,8 @@
           </li>
         </ul>
         @auth
-        <div class="flex-shrink-0 dropdown">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="flex-shrink-0 dropdown no-arrow">
+          <a href="#" class="d-block link-dark text-decoration-none no-arrow dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             {{ Auth::user()->name }}
             <img src="{{ Auth::user()->avatar }}" alt="mdo" width="40" height="40" class="ms-2 rounded-circle">
           </a>
