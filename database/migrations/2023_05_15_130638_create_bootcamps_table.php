@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->text('description');
-            $table->string('category');
+            // $table->string('category');
             $table->enum('event_type', ['Online', 'Offline']);
             $table->string('place_event');
             $table->date('start_event');
