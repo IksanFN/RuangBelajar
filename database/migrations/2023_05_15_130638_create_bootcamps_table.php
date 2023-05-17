@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('bootcamps', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->foreignId('speaker_id')->constrained();
             $table->foreignId('category_id')->constrained();
             $table->string('title');

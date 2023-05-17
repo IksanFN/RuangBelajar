@@ -2,10 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Bootcamp;
 use Carbon\Carbon;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Bootcamp;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class BootcampSeeder extends Seeder
 {
@@ -17,6 +18,7 @@ class BootcampSeeder extends Seeder
         $currentDateTime = Carbon::now();
 
         $bootcamp = new Bootcamp;
+        $bootcamp->uuid = Str::uuid()->toString();
         $bootcamp->speaker_id = 1;
         $bootcamp->category_id = 1;
         $bootcamp->title = 'Web Developer';

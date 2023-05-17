@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->foreignId('user_id')->constrained();
             $table->foreignId('bootcamp_id')->constrained();
             $table->boolean('is_paid')->default(false);
