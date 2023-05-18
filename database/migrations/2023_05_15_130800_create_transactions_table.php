@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained();
             $table->foreignId('bootcamp_id')->constrained();
             $table->boolean('is_paid')->default(false);
-            $table->date('payment_date');
-            $table->time('payment_expired');
+            $table->date('payment_date')->nullable();
+            $table->time('payment_expired')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

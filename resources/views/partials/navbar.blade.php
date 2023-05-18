@@ -10,10 +10,10 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Bootcamp</a>
+            <a class="nav-link" href="{{ route('bootcamp') }}">Bootcamp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">About Us</a>
+            <a class="nav-link" href="events.html">Speakers</a>
           </li>
         </ul>
         @auth
