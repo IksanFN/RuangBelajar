@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 // Route Guest
 Route::view('/', 'welcome')->name('home');
 Route::get('/bootcamp', [BootcampController::class, 'bootcamp'])->name('bootcamp');
+Route::view('/speakers', 'user.speaker.index')->name('speakers');
 
 // Auth
 Route::middleware('auth')->group(function () {

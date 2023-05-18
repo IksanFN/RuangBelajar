@@ -13,7 +13,7 @@
             <a class="nav-link" href="{{ route('bootcamp') }}">Bootcamp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">Speakers</a>
+            <a class="nav-link" href="{{ route('speakers') }}">Speakers</a>
           </li>
         </ul>
         @auth
