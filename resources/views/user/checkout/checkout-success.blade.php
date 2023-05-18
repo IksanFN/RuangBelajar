@@ -7,7 +7,7 @@
             <img src="{{ asset('assets/images/ill_register.png') }}" alt="" class="img-fluid rounded mb-5" width="350">
             <h2 class="fw-medium">Berhasil Checkout</h2>
             <p class="mb-4">Silahkan menuju halaman Dashboard untuk melakukan pembayaran</p>
-            <a href="" class="btn btn-primary px-4 shadow-sm btn-rounded px-4 py-2">My Dashboard</a>
+            <a href="{{ route('user.dashboard') }}" class="btn btn-primary shadow-sm btn-rounded px-4 py-2">My Dashboard</a>
         </div>
     </div>
 </section>

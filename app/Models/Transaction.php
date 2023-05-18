@@ -11,4 +11,14 @@ class Transaction extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = [];
+
+    public function bootcamp()
+    {
+        return $this->belongsTo(Bootcamp::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
