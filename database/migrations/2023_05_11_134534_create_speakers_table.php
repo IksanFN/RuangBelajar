@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('speakers', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->string('name');
             $table->string('avatar')->nullable();
             $table->string('email')->unique();

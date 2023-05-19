@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('bootcamps', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->foreignId('speaker_id')->constrained();
             $table->foreignId('category_id')->constrained();
             $table->string('title');
             $table->string('slug');
             $table->text('description');
-            $table->string('category');
+            // $table->string('category');
             $table->enum('event_type', ['Online', 'Offline']);
             $table->string('place_event');
             $table->date('start_event');

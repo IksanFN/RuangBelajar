@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('bootcamp_benefits', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->foreignId('bootcamp_id')->constrained();
             $table->string('name');
             $table->timestamps();
